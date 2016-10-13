@@ -1,0 +1,72 @@
+#myDiv {
+  position: absolute;
+  background-color: #41abbf;
+  top: 200px;
+  left: 200px;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#myDiv2 {
+  position: absolute;
+  background-color: #bf0693;
+  top: 200px;
+  left: 400px;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cubeWrapper {
+  position: absolute;
+  perspective: 800px; }
+
+.cube {
+  position: relative;
+  background-color: rgba(255, 0, 0, 0.3);
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cube {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  animation: rotateXaxis 5s infinite ease; }
+
+.face {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  backface-visibility: visible;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#face1 {
+  background-color: blue;
+  transform: rotateX(0deg) translateZ(100px); }
+
+#face2 {
+  background-color: green;
+  transform: rotateX(180deg) translateZ(100px); }
+
+#face3 {
+  background-color: orange;
+  transform: rotateX(90deg) translateZ(100px); }
+
+#face4 {
+  background-color: magenta;
+  transform: rotateX(270deg) translateZ(100px); }
+
+@keyframes rotateXaxis {
+  0% {
+    transform: rotateX(0deg); }
+  100% {
+    transform: rotateX(360deg); } }
+
+/*# sourceMappingURL=cubeMaker.css.map */
